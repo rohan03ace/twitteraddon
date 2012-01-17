@@ -1,0 +1,6 @@
+<!ENTITY stockquotemonitor.hello.label            "Hello World!">
+<!ENTITY stockquotemonitor.helloMenu.accesskey    "l">
+<!ENTITY stockquotemonitor.helloItem.accesskey    "H">
+<!ENTITY stockquotemonitor.toolbar.name           "Stock Quote Monitor Toolbar">
+<!ENTITY stockquotemonitor.toolbar.accesskey      "Q">
+
