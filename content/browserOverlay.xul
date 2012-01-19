@@ -48,16 +48,17 @@
     <toolbar id="stockquotemonitor-toolbar" toolbarname="&stockquotemonitor.toolbar.name;"
 	  accesskey="&stockquotemonitor.toolbar.accesskey;" customizable="true">
   	  <toolbaritem id="stockquotemonitor-toolbaritem">
-		<label id="stockquotemonitor-stockquote1-label" flex="1" value="stockquote1"/>
-		<textbox readonly="false" style="background-color:#FF6666;" id="stockquotemonitor-quotetext1" size="20"/>
-		<label value="label" id="stockquotemonitor-stockquote2-label"/>
-		<textbox id="stockquotemonitor-quotetext2" size="20"/>
-		<label value="label" id="stockquotemonitor-stockquote3-label"/>
-		<textbox id="stockquotemonitor-quotetext3" size="20"/>
-		<label value="label" id="stockquotemonitor-stockquote4-label"/>
-		<textbox size="20" id="stockquotemonitor-quotetext4"/>
+		<label id="stockquotemonitor-stockquote1-label" value="GOOGLE"/>
+		<textbox readonly="true" id="stockquotemonitor-quotetext1" size="20"/>
+		<label value="YAHOO" id="stockquotemonitor-stockquote2-label"/>
+		<textbox readonly="true" id="stockquotemonitor-quotetext2" size="20"/>
+		<label value="SACHIN" id="stockquotemonitor-stockquote3-label"/>
+		<textbox readonly="true" id="stockquotemonitor-quotetext3" size="20"/>
+		<label value="10DLKAR" id="stockquotemonitor-stockquote4-label"/>
+		<textbox readonly="true" size="20" id="stockquotemonitor-quotetext4"/>
 	  </toolbaritem>
-	  <toolbarbutton id="stockquotemonitor-refresh-button" label="Refresh"/>
+	  <toolbarbutton id="stockquotemonitor-refresh-button" label="Refresh"
+	    oncommand="StockQuoteMonitor.Service.getQuoteData(event);" />
 	</toolbar>
   </toolbox>
 </overlay>
